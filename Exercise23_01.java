@@ -44,8 +44,7 @@ public class Exercise23_01 {
             int k = i - 1;
 
             // Shift elements right until we find the right spot
-            int compare = list[k].compareTo(currentElement);
-            while (k >= 0 && compare > 0) {
+            while (k >= 0 && list[k].compareTo(currentElement) > 0) {
                 list[k + 1] = list[k]; // shift right
                 k--;
             }
@@ -70,8 +69,8 @@ public class Exercise23_01 {
             int k = i - 1;
 
             // Shift elements right until we find the right spot
-            int compare = comparator.compare(list[k], (currentElement));
-            while (k >= 0 && compare > 0 ) {
+            //int compare = comparator.compare(list[k], (currentElement));
+            while (k >= 0 && comparator.compare(list[k], (currentElement)) > 0 ) {
                 list[k + 1] = list[k];  // shift right
                 k--;
             }
