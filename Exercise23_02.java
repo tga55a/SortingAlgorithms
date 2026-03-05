@@ -88,7 +88,7 @@ public class Exercise23_02 {
 
         while (current1 < list1.length && current2 < list2.length) { // line M
 
-            if (list1[current1].compareTo(list2[current2]) > 0)             // line N
+            if (list1[current1].compareTo(list2[current2]) < 0)             // line N
                 temp[current3++] = list1[current1++];          // line O
             else
                 temp[current3++] = list2[current2++];          // line P
